@@ -1,0 +1,2 @@
+ceiling - arr find the smaller greater or equal to target element
+floor - greater no smaller no or traget no
