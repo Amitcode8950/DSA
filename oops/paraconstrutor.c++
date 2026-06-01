@@ -27,6 +27,7 @@ class teacher{
         cout<<dept<<endl;
         cout<<getSalary()<<endl;
     }   
+    
 };
 int main(){
     teacher t1(1,"khilan","maths",10000);
