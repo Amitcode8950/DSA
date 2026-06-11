@@ -1,0 +1,5 @@
+to solve real world problem
+devide the problem in the paises of small 
+real world entites like car, students al have same state and behavior 
+class -> blueprint ex->car
+object -> real world entity or explain the blueprint car ex-> car name
