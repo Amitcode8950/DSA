@@ -14,7 +14,7 @@ public class week {
                 System.out.println("Off day");
                 break;
             default:
-                System.out.println("not a day enter a good number");
+                System.out.println("not a day enter a good number between 1 to 7");
         }
     }
 }

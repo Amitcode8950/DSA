@@ -1,7 +1,7 @@
 
 // to do so must define the blueprint  class
 
-public class createclass {
+public class basicofclassandobjectcreation {
    // ✅ CLASS — This is the blueprint/template for a Student
    public static class Student{
     
