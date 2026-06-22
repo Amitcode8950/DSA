@@ -18,5 +18,6 @@ public class MyVector {
         
         Collections.reverse(var1);
         System.out.println(var1);
+         
     }
 }

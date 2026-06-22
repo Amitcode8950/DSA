@@ -1,1 +1,0 @@
-arr.remove(0);
