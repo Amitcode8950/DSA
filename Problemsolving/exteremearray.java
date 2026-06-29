@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class exteremearray {
     static int[] ramdo(int[] arr){
       int n =arr.length;
@@ -22,7 +22,7 @@ public class exteremearray {
          rj--;
          
         }
-       
+       return newarray;
       }
       
        
@@ -31,8 +31,7 @@ public class exteremearray {
 
     public static void main(String[] args) {
         int[] arr ={1,2,3,4,5,6};
-        ramdo(arr);
-        
-       
+        int[] result = ramdo(arr);
+        System.out.println(Arrays.toString(result));
     }
 }
