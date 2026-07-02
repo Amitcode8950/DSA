@@ -1,18 +1,26 @@
+import java.util.Arrays;
+import java.util.Scanner;
 public class siftarray {
-    static void arraysift(int[] arr){
-        int n =arr.length;
-        System.out.println(n);
-        int temp =arr[n-1];
-        for(int i=n-1;i>0;i--){
-            arr[i]=arr[i-1];
-        }
-        arr[0]=temp;
+
+    static void sift(int [] arr){
+      int n =arr.length;
+      int temp =arr[n-1];
+      for(int i=n-1; i>0; i--){
+        arr[i]= arr[i-1];
+      }
+      arr[0]=temp;
+      System.out.println(Arrays.toString(arr));
     }
+    
+    
     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
-        arraysift(arr);
-        for(int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
+        Scanner in =new Scanner(System.in);
+
+        
+      int [] arr = new int[5];
+      for(int i=0; i<arr.length; i++){
+        arr[i]=in.nextInt();
+      }
+      sift(arr);
     }
 }
