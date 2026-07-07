@@ -9,7 +9,7 @@ public class binaryseach {
     static int binarySeach(int[] arr, int target){
         int start =0;
         int end = arr.length -1 ;
-        System.out.println(end);
+       
         while (start <=end){
             //int mid = start+end/2;  minght be possible excend that in java
             int mid =start +(end-start)/2;
@@ -20,6 +20,7 @@ public class binaryseach {
             }else{
                 return mid;
             }
+           
         }
         return -1;
     }
