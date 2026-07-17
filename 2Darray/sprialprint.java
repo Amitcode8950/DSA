@@ -48,7 +48,7 @@ public class sprialprint {
         };
         List<Integer> ans = sperial(arr);
         for (int k : ans) {
-            System.out.print(k +" ");
+            System.out.print(k + " ");
         }
     }
 }
