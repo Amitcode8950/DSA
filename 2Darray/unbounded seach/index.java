@@ -1,6 +1,53 @@
 
 public class index {
+    /**
+     * InfiniteArray
+     */
+    public class InfiniteArray {
+        private int [] arr;
+        public InfiniteArray(int[] nums){
+            this.arr=nums;
+        }
+        
+        public int get(int index) {
+            return arr[index];
+        }
+    } 
+   
+    public int unboundedSearch(InfiniteArray arr, int target){
+        if(arr.get(0)==target){
+            return 0;
+        }
+        int i =1;
+        while(arr.get(i)<= target){
+            i=i*2;
+        }
+        if(arr.get(i)>target){
+            return binarySearch(arr, i/2, i, target);
+        }
+        return -1;
+    }
+
+    public int binarySearch(InfiniteArray arr, int start, int end, int target) {
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (arr.get(mid) == target) {
+                return mid;
+            } else if (arr.get(mid) < target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
-        int 
+        int [] nums ={1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49,51,53,55,57,59,61,63,65,67,69,71,73,75,77,79,81,83,85,87,89,91,93,95,97,99,101,103,105,107,109,111,113,115,117,119,121,123,125,127,129,131,133,135,137,139,141,143,145,147,149,151,153,155,157,159,161,163,165,167,169,171,173,175,177,179,181,183,185,187,189,191,193,195,197,199,201};
+        int target =199;
+
+        index i = new index();
+        InfiniteArray arr = i.new InfiniteArray(nums);
+        System.out.println(i.unboundedSearch(arr, target));
     }
 }
